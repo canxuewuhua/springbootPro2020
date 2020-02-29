@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 /**
  * @author yongqiang.zhu
  * @date 2020/2/28 16:17
- * 实现功能：将一个对象放入数组的第一位，重新调整顺序打印
+ * 实现功能：将一个对象放入数组的第一位，重新调整顺序打印120
  */
 public class ListSortTest {
 
