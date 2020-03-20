@@ -40,9 +40,6 @@ public class Test {
 		mapList.addAll(mapList2);
 
 
-
-
-
 		System.out.println(mapList);
 	}
 }

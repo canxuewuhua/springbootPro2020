@@ -29,7 +29,7 @@ public class LambdaTest {
     public static void main(String[] args) {
 //        printToLowerCase();
 //        printListName();
-//        printNotEmptyUser();
+        printNotEmptyUser();
 //        printListDTOToMapKeyValue();
 //        printListDTOToListString();
 //        printUserCopyToStudent();
@@ -38,7 +38,7 @@ public class LambdaTest {
 //        printListAgeToCount();
 //        printGroupByUserProperties();
 //          printGroupByMapping();
-        printGroupByMoreElements();
+//        printGroupByMoreElements();
     }
 
     /**
@@ -88,8 +88,8 @@ public class LambdaTest {
         List<User> userList = new ArrayList<>();
         userList.add(user01);
         userList.add(user02);
-        List<User> quotaCustGroups = userList.stream().filter(usl -> !StringUtils.isEmpty(usl.getIdentyID())).collect(Collectors.toList());
-        System.out.println(quotaCustGroups);
+        userList = userList.stream().filter(usl -> !StringUtils.isEmpty(usl.getIdentyID())).collect(Collectors.toList());
+        System.out.println(userList);
     }
 
     /**
