@@ -214,3 +214,11 @@
   key，重新统计当天这个key存储的次数
   场景是：每个用户增加每日手输实名认证次数限制，每个自然日（0点-24点）有三次手输入实名认证机会，当手输实名请求次数大于3次时，拒绝请求，
   并给出前端返回相应错误码，这样我可以设置一个key= 前缀+客户号+年月日作为当天含若干次数的key，到第二天key重新取值
+  
+  # 安装idea插件
+  1. Alibaba Java Coding Guidelines 代码规范检查
+  2. FindBugs-IDEA  这个插件可以帮助我们查找隐藏的bug,比较重要的功能就是查找潜在的null指针
+  3. Maven Helper 分析依赖冲突的插件
+  4. Grep Console 日志高亮显示插件
+  5. Rainbow Brackets 可以实现配对括号相同颜色，并且实现选中区域代码高亮的功能
+  6. Free Mybatis plugin 增强idea对mybatis支持的插件，点击箭头可以实现跳转
