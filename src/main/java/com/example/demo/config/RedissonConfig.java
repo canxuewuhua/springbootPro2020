@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 
 public class RedissonConfig {
 
-    @Bean
+//    @Bean
     public Redisson redisson(){
         Config config = new Config();
         config.useSingleServer().setAddress("").setDatabase(0);
