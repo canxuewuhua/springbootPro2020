@@ -15,8 +15,8 @@ import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSeriali
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import redis.clients.jedis.JedisPoolConfig;
 
-@Configuration
-@EnableCaching
+//@Configuration
+//@EnableCaching
 @Slf4j
 public class RedisConfig extends CachingConfigurerSupport {
     @Value("${spring.redis.pool.max-active}")
@@ -71,7 +71,8 @@ public class RedisConfig extends CachingConfigurerSupport {
         config.setTestOnBorrow(TEST_ON_BORROW);
         factory.setPoolConfig(config);
 
-        log.info("redis初始化成功");
+
+        System.out.println("redis初始化成功");
         return factory;
     }
 
