@@ -23,19 +23,19 @@ import org.springframework.web.bind.annotation.*;
 @Api(value = "cityOperate", description = "城市类操作", tags = {"cityOperate"})
 public class CityController {
 
-	@Autowired
-	private CityService cityService;
-
-	/**
-	 *  更改城市名称
-	 * @return
-	 */
-	@OnlineApi
-	@ApiOperation(value="更新城市名称", notes="更新城市名称")
-	@RequestMapping(name = "更新城市名称", path = "/updateCityName",method = RequestMethod.GET)
-	@ResponseBody
-	public ResultDTO updateCityName(){
-		cityService.updateCityName();
-		return ResultUtils.success();
-	}
+//	@Autowired
+//	private CityService cityService;
+//
+//	/**
+//	 *  更改城市名称
+//	 * @return
+//	 */
+//	@OnlineApi
+//	@ApiOperation(value="更新城市名称", notes="更新城市名称")
+//	@RequestMapping(name = "更新城市名称", path = "/updateCityName",method = RequestMethod.GET)
+//	@ResponseBody
+//	public ResultDTO updateCityName(){
+//		cityService.updateCityName();
+//		return ResultUtils.success();
+//	}
 }
