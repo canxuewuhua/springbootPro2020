@@ -4,11 +4,11 @@ import com.example.demo.service.AbutmentMerchantService;
 import com.example.demo.util.Md5Utils;
 import com.example.demo.util.RequestParamUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 @Service

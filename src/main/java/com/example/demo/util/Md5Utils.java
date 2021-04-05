@@ -1,8 +1,8 @@
 package com.example.demo.util;
 
 import com.google.common.base.Joiner;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.http.NameValuePair;
+import org.apache.commons.lang3.StringUtils;
 
 import java.security.MessageDigest;
 import java.util.List;

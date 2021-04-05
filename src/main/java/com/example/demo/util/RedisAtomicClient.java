@@ -9,6 +9,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.params.SetParams;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -128,7 +129,8 @@ public class RedisAtomicClient {
                 @Override
                 public String doInRedis(RedisConnection connection) throws DataAccessException {
                     Jedis jedis = (Jedis) connection.getNativeConnection();
-                    String status = jedis.set(key, value, "nx", "ex", expireSeconds);
+//                    String status = jedis.set(key, value, "nx", "ex", expireSeconds);
+                    String status = "";
                     return status;
                 }
             });

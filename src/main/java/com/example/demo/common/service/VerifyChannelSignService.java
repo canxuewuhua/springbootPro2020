@@ -3,9 +3,9 @@ package com.example.demo.common.service;
 import com.example.demo.util.RSASignature;
 import com.example.demo.util.RequestParamUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 /**
