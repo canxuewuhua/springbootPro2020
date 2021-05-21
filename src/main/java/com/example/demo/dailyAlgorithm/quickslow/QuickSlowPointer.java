@@ -1,5 +1,8 @@
 package com.example.demo.dailyAlgorithm.quickslow;
 
+/**
+ * 
+ */
 public class QuickSlowPointer {
 
     public static void main(String[] args) {
@@ -17,15 +20,15 @@ public class QuickSlowPointer {
         node5.next = node6;
         node6.next = node3;
 
-//        System.out.println(getMiddleNode(node1));
-//
-//        System.out.println(getBackN(node1, 2));
-//        System.out.println(isLoop(node1));
+
+//      System.out.println(getMiddleNode(node1));
+//      System.out.println(getBackN(node1, 2));
+//      System.out.println(isLoop(node1));
         System.out.println(entryMyNode(node1).val);
     }
 
     /**
-     * 求链表中间节点 一个指针走两步 一个指针走一步，走两步的结束了，走一步的就正好到中间
+     * 1、求链表中间节点 一个指针走两步 一个指针走一步，走两步的结束了，走一步的就正好到中间
      */
     public static int getMiddleNode(MyNode head){
         MyNode p = head;
@@ -38,7 +41,7 @@ public class QuickSlowPointer {
     }
 
     /**
-     * 找到链表的倒数第n个节点
+     * 2、找到链表的倒数第n个节点
      */
     public static int getBackN(MyNode head,int n){
         MyNode p = head;
@@ -52,10 +55,10 @@ public class QuickSlowPointer {
             q = q.next;
         }
         return q.val;
-
     }
+
     /**
-     * 判断一个链表是否有环
+     * 3、判断一个链表是否有环
      * 一个走两步 一个走一步 肯定会相交
      */
     public static MyNode isLoop(MyNode head){
@@ -73,7 +76,7 @@ public class QuickSlowPointer {
     }
 
     /**
-     *  找到有环链表的入口
+     *  4、找到有环链表的入口
      */
     public static MyNode entryMyNode(MyNode root){
         MyNode meet = isLoop(root);
@@ -88,5 +91,19 @@ public class QuickSlowPointer {
             }
             return p;
         }
+    }
+
+    /**
+     * 5、两个链表相交的点
+     */
+    public static MyNode getIntersector(MyNode headA, MyNode headB){
+        MyNode p = headA;
+        MyNode q = headB;
+
+        while (p!=q){
+            p = p == null ? headB : p.next;
+            q = q == null ? headA : q.next;
+        }
+        return p;
     }
 }

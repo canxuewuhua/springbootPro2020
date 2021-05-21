@@ -1,4 +1,4 @@
-package com.example.demo.dailyexercise;
+package com.example.demo.dailyAlgorithm.lru;
 
 public class DlinkedNode {
 
