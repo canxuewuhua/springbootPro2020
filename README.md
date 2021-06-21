@@ -222,3 +222,9 @@
   4. Grep Console 日志高亮显示插件
   5. Rainbow Brackets 可以实现配对括号相同颜色，并且实现选中区域代码高亮的功能
   6. Free Mybatis plugin 增强idea对mybatis支持的插件，点击箭头可以实现跳转
+  
+  # 解决spring boot profile配置和启动时
+  no active profile set, falling back to default profiles: default的问题
+  可以在项目的Configuration 中的VM options: -Dspring.profiles.active=local
+  之后就不会出现"no active profile set, falling back to default profiles: default"
+  会打印"The following profiles are active: local"
