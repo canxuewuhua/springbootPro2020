@@ -90,5 +90,7 @@
     <logger name="org.mybatis.spring" level="WARN" />
     <logger name="com.zaxxer.hikari.pool" level="WARN" />
 
-    <logger name="org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer" level="INFO"/>
+    <!-- Tomcat started 是info级别 而上面org.springframework是所有类的输出为warn级别 所以info日志无法打印 -->
+    <!-- 我们不希望输出所有spring的日志 所以还是保持warn级别不变，但是增加特例 -->
+    <logger name="org.springframework.boot.web.embedded.tomcat.TomcatWebServer" level="INFO"/>
 </configuration>

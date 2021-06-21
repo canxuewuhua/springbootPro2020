@@ -4,7 +4,8 @@ import redis.clients.jedis.Jedis;
 
 public class TestSet {
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("192.168.199.106", 6379);
+        Jedis jedis = new Jedis("47.94.155.21", 6379);
+        jedis.auth("123456");
         jedis.flushDB();
         System.out.println("============向集合中添加元素（不重复）============");
         System.out.println(jedis.sadd("eleSet", "e1","e2","e4","e3","e0","e8","e7","e5"));

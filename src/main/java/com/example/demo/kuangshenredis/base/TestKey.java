@@ -6,7 +6,8 @@ import java.util.Set;
 
 public class TestKey {
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("192.168.199.106", 6379);
+        Jedis jedis = new Jedis("47.94.155.21", 6379);
+        jedis.auth("123456");
 
         System.out.println("清空数据："+jedis.flushDB());
         System.out.println("判断某个键是否存在："+jedis.exists("username"));

@@ -10,7 +10,8 @@ import redis.clients.jedis.Transaction;
 public class TestTx {
 
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("192.168.199.106", 6379);
+        Jedis jedis = new Jedis("47.94.155.21", 6379);
+        jedis.auth("123456");
 
         jedis.flushDB();
 
